@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Responsive Cards</title>
+
+<style>
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        font-family: Arial, sans-serif;
+        background: #f3f4f6;
+        padding: 20px;
+    }
+
+    .card-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+        gap: 30px;
+    }
+
+    .card {
+        background: white;
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease;
+        width: 350px;
+        height: 370px;
+    }
+
+    .card:hover {
+        transform: translateY(-5px);
+    }
+
+    .card img {
+        width: 100%;
+        height: 250px;
+        object-fit: cover;
+    }
+
+    .card-content {
+        padding: 15px;
+    }
+
+    .card-content h3 {
+        margin-bottom: 10px;
+        font-size: 1.1rem;
+    }
+
+    .card-content p {
+        font-size: 0.95rem;
+        color: #555;
+        line-height: 1.4;
+    }
+</style>
+</head>
+
+<body>
+
+<h1>Responsive Card Grid</h1><br>
+<hr>
+<br>
+<div class="card-grid">
+    <div class="card">
+        <img src="./assets/Bike.jpg">
+        <div class="card-content">
+            <h3>Riding Bike</h3>
+            <p>Riding a sportbike is an electrifying experience that combines speed, precision, and adrenaline.</p>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="./assets/mountainadv.jpg" >
+        <div class="card-content">
+            <h3>Mountain Adventure</h3>
+            <p>Climbing the mountains, each step tests your strength and fills you with awe.
+Make every moment an unforgettable adventure.</p>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="./assets/Fort.jpg" >
+        <div class="card-content">
+            <h3>Fort</h3>
+            <p>A fort stands tall, guarding history with its mighty walls and ancient stones.
+Its silent corridors whisper tales of battles, kings.</p>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="./assets/Nature.jpg" >
+        <div class="card-content">
+            <h3>Nature</h3>
+            <p>Nature paints the world with green forests, sparkling rivers, and golden sunlight.</p>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

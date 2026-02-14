@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn Grid</title>
+    <style>
+        .griContainerFruit{
+            display: grid;
+            width: 430px;
+            gap:15px;
+            margin-left: 430px;
+            margin-top: 30px;
+        }
+        .grapes{
+            grid-row-start: 1;
+            grid-row-end: 2;
+            grid-column-start: 1;
+            grid-column-end: 2;
+            height: 200px;
+            width: 200px;
+            background-image: url("assets/grapes.jpg");
+            background-size: cover;
+        }
+        .strawberry{
+            grid-row-start: 1;
+            grid-row-end: 2;
+            grid-column-start: 2;
+            grid-column-end: 3;
+            height: 200px;
+            width: 200px;
+            background-image: url("assets/strawberry.jpg");
+            background-size: cover;
+        }
+        .watermelon{
+            grid-row-start: 1;
+            grid-row-end: 3;
+            grid-column-start: 3;
+            grid-column-end: 4;
+            height: 465px;
+            width: 270px;
+            background-image: url("assets/watermelon.jpg");
+            background-size: cover;
+        }
+        .orange{
+            grid-row-start: 2;
+            grid-row-end: 3;
+            grid-column-start: 1;
+            grid-column-end: 3;
+            height: 250px;
+            width: 420px;
+           background-image: url("assets/orange.jpg");
+            background-size: cover;
+        }
+        .papaya{
+            grid-row-start: 3;
+            grid-row-end: 4;
+            grid-column-start: 1;
+            grid-column-end: 3;
+            height: 190px;
+            width: 420px;
+            background-image: url("assets/papaya.jpg");
+            background-size: cover;
+        }
+        .pineapple{
+            grid-row-start: 3;
+            grid-row-end: 4;
+            grid-column-start: 3;
+            grid-column-end: 4;
+            height: 190px;
+            width: 270px;
+            background-image: url("assets/pineapple.jpg");
+            background-size: cover;
+        }
+        
+    </style>
+</head>
+<body>
+
+    <div class="griContainerFruit">
+        <div class="grapes"></div>
+        <div class="strawberry"></div>
+        <div class="watermelon"></div>
+        <div class="orange"></div>
+        <div class="papaya"></div>
+        <div class="pineapple"></div>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Responsive Image Gallery</title>
+
+<style>
+    body {
+        margin: 0;
+        padding: 25px;
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+        background: #f4f4f4;
+    }
+
+    .gallery {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        gap: 15px;
+    }
+
+    .gallery img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 8px;
+        transition: transform 0.3s ease;
+    }
+
+    .gallery img:hover {
+        transform: scale(1.09);
+    }
+</style>
+</head>
+
+<body>
+
+<h2>Responsive Image Gallery</h2>
+<hr><br>
+<div class="gallery">
+    <img src="./assets/Bike.jpg">
+    <img src="./assets/sea.jpg">
+    <img src="./assets/mountain.jpg ">
+    <img src="./assets/building.jpg">
+    <img src="./assets/sky.jpg">
+    <img src="./assets/road.jpg">
+</div>
+
+</body>
+</html>

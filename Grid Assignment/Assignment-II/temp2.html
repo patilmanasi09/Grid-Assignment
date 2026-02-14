@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Images</title>
+    <style>
+        .griContainer {
+            display: grid;
+            width: 430px;
+            gap: 15px;
+            margin-left: 400px;
+            margin-top: 70px;
+        }
+
+        .darkf {
+            grid-row-start: 1;
+            grid-row-end: 2;
+            grid-column-start: 1;
+            grid-column-end: 2;
+            height: 250px;
+            width: 250px;
+            background-image: url("assets/darkf.jpg");
+            background-size: cover;
+        }
+
+        .citysunset {
+            grid-row-start: 1;
+            grid-row-end: 2;
+            grid-column-start: 2;
+            grid-column-end: 4;
+            height: 250px;
+            width: 520px;
+            background-image: url("assets/citysunset.jpg");
+            background-size: cover;
+        }
+
+        .sea {
+            grid-row-start: 2;
+            grid-row-end: 3;
+            grid-column-start: 1;
+            grid-column-end: 3;
+            height: 250px;
+            width: 520px;
+            background-image: url("assets/sea.jpg");
+            background-size: cover;
+        }
+
+        .windows {
+            grid-row-start: 2;
+            grid-row-end: 3;
+            grid-column-start: 3;
+            grid-column-end: 4;
+            height: 250px;
+            width: 250px;
+            background-image: url("assets/windows.jpg");
+            background-size: cover;
+        }
+
+        .redfort {
+            grid-row-start: 3;
+            grid-row-end: 4;
+            grid-column-start: 1;
+            grid-column-end: 2;
+            height: 60px;
+            width: 250px;
+            background-image: url("assets/redfort.jpg");
+            background-size: cover;
+        }
+
+        .blackw {
+            grid-row-start: 3;
+            grid-row-end: 4;
+            grid-column-start: 2;
+            grid-column-end: 3;
+            height: 60px;
+            width: 250px;
+            background-image: url("assets/blackw.jpg");
+            background-size: cover;
+        }
+
+        .wall {
+            grid-row-start: 3;
+            grid-row-end: 4;
+            grid-column-start: 3;
+            grid-column-end: 4;
+            height: 60px;
+            width: 250px;
+            background-image: url("assets/wall.jpg");
+            background-size: cover;
+        }
+
+
+        .box {
+            position: relative;
+            display: flex;
+            align-items:flex-start;
+           
+        }
+
+        .box span {
+            color: white;
+            font-size: 16px;
+            font-weight: bold;
+            text-align:right;
+            padding: 10px;
+        
+        }
+
+        
+    </style>
+</head>
+
+<body>
+
+    <div class="griContainer">
+        <div class="darkf box">
+            <span>The winter of my discontent</span>
+        </div>
+
+        <div class="citysunset box">
+            <span>Instagram is toxic but I keep posting</span>
+        </div>
+
+        <div class="sea box">
+            <span>Throwing my phone into the ocean</span>
+        </div>
+
+        <div class="windows box">
+            <span>I'm never leaving my room</span>
+        </div>
+
+        <div class="redfort box small">
+            <span>Staring at the horizon thiking</span>
+        </div>
+
+        <div class="blackw box small">
+            <span>This is water</span>
+        </div>
+
+        <div class="wall box small">
+            <span>Table for one please</span>
+        </div>
+    </div>
+
+</body>
+
+</html>
