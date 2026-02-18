@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flowers</title>
+    <style>
+        .griContainerflo {
+            display: grid;
+            width: 430px;
+            gap: 15px;
+            margin-left: 420px;
+            margin-top: 30px;
+        }
+
+        .griContainerflo div {
+            transition: transform 0.4s ease;
+        }
+
+        .griContainerflo div:hover {
+            transform: scale(1.2);
+        }
+
+
+        .rose {
+            grid-row-start: 1;
+            grid-row-end: 2;
+            grid-column-start: 1;
+            grid-column-end: 2;
+            height: 250px;
+            width: 200px;
+            background-image: url("assets/rose.jpg");
+            background-size: cover;
+
+        }
+
+
+        .african {
+            grid-row-start: 2;
+            grid-row-end: 3;
+            grid-column-start: 1;
+            grid-column-end: 2;
+            height: 250px;
+            width: 200px;
+            background-image: url("assets/african.jpg");
+            background-size: cover;
+        }
+
+        .lpink {
+            grid-row-start: 1;
+            grid-row-end: 2;
+            grid-column-start: 2;
+            grid-column-end: 3;
+            height: 250px;
+            width: 200px;
+            background-image: url("assets/lpink.jpg");
+            background-size: cover;
+        }
+
+        .lyellow {
+            grid-row-start: 1;
+            grid-row-end: 2;
+            grid-column-start: 3;
+            grid-column-end: 4;
+            height: 250px;
+            width: 200px;
+            background-image: url("assets/lyellow.jpg");
+            background-size: cover;
+        }
+
+        .pink {
+            grid-row-start: 2;
+            grid-row-end: 3;
+            grid-column-start: 2;
+            grid-column-end: 3;
+            height: 250px;
+            width: 200px;
+            background-image: url("assets/pink.jpg");
+            background-size: cover;
+        }
+
+        .spring {
+            grid-row-start: 2;
+            grid-row-end: 3;
+            grid-column-start: 3;
+            grid-column-end: 4;
+            height: 250px;
+            width: 200px;
+            background-image: url("assets/spring.jpg");
+            background-size: cover;
+        }
+
+        .summerflo {
+            grid-row-start: 3;
+            grid-row-end: 4;
+            grid-column-start: 1;
+            grid-column-end: 2;
+            height: 250px;
+            width: 200px;
+            background-image: url("assets/summerflo.jpg");
+            background-size: cover;
+        }
+
+        .white {
+            grid-row-start: 3;
+            grid-row-end: 4;
+            grid-column-start: 2;
+            grid-column-end: 3;
+            height: 250px;
+            width: 200px;
+            background-image: url("assets/white.jpg");
+            background-size: cover;
+        }
+
+        .yellow {
+            grid-row-start: 3;
+            grid-row-end: 4;
+            grid-column-start: 3;
+            grid-column-end: 4;
+            height: 250px;
+            width: 200px;
+            background-image: url("assets/yellow.jpg");
+            background-size: cover;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="griContainerflo">
+        <div class="rose"></div>
+        <div class="african"></div>
+        <div class="lpink"></div>
+        <div class="lyellow"></div>
+        <div class="pink"></div>
+        <div class="spring"></div>
+        <div class="summerflo"></div>
+        <div class="white"></div>
+        <div class="yellow"></div>
+    </div>
+
+</body>
+
+</html>

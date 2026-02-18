@@ -1,0 +1,123 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn Grid</title>
+    <style>
+    
+        .gridContainerLayout{
+            display: grid; 
+            grid-template-areas: 'headerOne headerOne headerOne headerOne'
+                                'Navbar Navbar Navbar Navbar'
+                                'leftSide mai mai rightSide'
+                                'foo foo foo foo'
+            ;  
+
+        }
+        header{
+            grid-area: headerOne;
+            height: 100px;
+            background-color: white;
+            border: 2px solid gray;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 20px;
+            font-weight: bold;
+            color: green;
+            margin: 3px;
+        }
+        nav{
+            grid-area: Navbar;
+            height: 100px;
+           background-color: white;
+            border: 2px solid gray;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 20px;
+            font-weight: bold;
+            color: green;
+            margin: 3px;
+        }
+        .asideLeft{
+            grid-area: leftSide;
+            height: 400px;
+            background-color: white;
+            border: 2px solid gray;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 20px;
+            font-weight: bold;
+            color: green;
+            margin: 3px;
+        }
+        main{
+            grid-area: mai;
+            height: 400px;
+            background-color: white;
+            border: 2px solid gray;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 20px;
+            font-weight: bold;
+            color: green;
+            margin: 3px;
+        }
+        .asideRight{
+            grid-area: rightSide;
+            height: 400px;
+            background-color: white;
+            border: 2px solid gray;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 20px;
+            font-weight: bold;
+            color: green;
+            margin: 3px;
+        }
+        footer{
+            grid-area: foo;
+            height: 100px;
+            background-color: white;
+            border: 2px solid gray;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 20px;
+            font-weight: bold;
+            color: green;
+            margin: 3px;
+        }
+        @media screen and (max-width:600px){
+                .gridContainerLayout{
+                               grid-template-areas: 'headerOne'
+                                'Navbar'
+                                'mai'
+                                'leftSide'
+                                'rightSide'
+                                'foo'
+            ;
+                }
+        }
+    </style>
+</head>
+<body>
+    <div class="gridContainerLayout">
+        <header>Header</header>
+        <nav>Navigation Bar</nav>
+        <aside class="asideLeft">Content</aside>
+        <main>Main Content</main>
+        <aside class="asideRight">Content</aside>
+        <footer>Footer</footer>
+
+    </div>
+    
+    
+</body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn Grid</title>
+
+    <style>
+        body {
+            margin: 0;
+        }
+
+        .gridContainerLayout {
+            display: grid;
+
+            grid-template-areas:
+                "header header"
+                "sidebar main"
+                "footer footer";
+
+           
+            grid-template-columns: 1fr 3fr;
+            grid-template-rows: 1fr 4fr 1fr;
+            gap: 10px;
+            min-height: 100vh;
+        }
+
+        header {
+            grid-area: header;
+            background-color: rgb(202, 229, 253);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: black;
+        }
+
+        .sidebar {
+            grid-area: sidebar;
+            background-color: rgb(213, 246, 246);
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: black;
+        }
+
+        .content {
+            grid-area: main;
+            background-color: rgb(248, 141, 141);
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: black;
+        }
+
+        footer {
+            grid-area: footer;
+            background-color: rgb(255, 170, 131);
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="gridContainerLayout">
+        <header>Header</header>
+        <aside class="sidebar">Sidebar</aside>
+        <main class="content">Main Content</main>
+        <footer>Footer</footer>
+    </div>
+
+</body>
+</html>

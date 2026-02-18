@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive CSS Grid</title>
+  <style>
+    * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: #f694cc;
+  padding: 20px;
+}
+
+.grid-container {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: 250px 1fr 1fr 1fr;
+  grid-template-rows: auto 1fr auto auto;
+  grid-template-areas:
+    "navbar navbar navbar navbar"
+    "sidebar main main main"
+    "sidebar content1 content2 content3"
+    "sidebar footer footer footer";
+}
+
+/* Layout blocks */
+.navbar {
+  grid-area: navbar;
+  background: rgb(158, 250, 250);
+  height: 100px;
+}
+
+.sidebar {
+  grid-area: sidebar;
+  background: aqua ;
+  height: 590px;
+}
+
+.main {
+  grid-area: main;
+  background: #adf6ef;
+  height: 100px;
+}
+
+.content1 {
+  grid-area: content1;
+  background: #7cffcb;
+  height: 370px;
+}
+
+.content2 {
+  grid-area: content2;
+  background: #a0e1dc;
+  height: 370px;
+}
+
+.content3 {
+  grid-area: content3;
+  background: #7cffcb;
+  height: 370px;
+}
+
+.footer {
+  grid-area: footer;
+  background: rgb(144, 249, 249);
+  height: 100px;
+}
+
+/* Common styling */
+.grid-container > div {
+  padding: 20px;
+  border-radius: 6px;
+  text-align: center;
+  font-weight: bold;
+}
+
+/* Mobile layout */
+@media (max-width: 768px) {
+  .grid-container {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "navbar"
+      "sidebar"
+      "main"
+      "content1"
+      "content2"
+      "content3"
+      "footer";
+  }
+}
+
+  </style>
+</head>
+<body>
+
+  <div class="grid-container">
+    <div class="navbar">Navbar</div>
+    <div class="sidebar">Sidebar</div>
+    <div class="main">Main</div>
+    <div class="content1">Content 1</div>
+    <div class="content2">Content 2</div>
+    <div class="content3">Content 3</div>
+    <div class="footer">Footer</div>
+  </div>
+
+</body>
+</html>
